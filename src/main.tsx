@@ -1,9 +1,9 @@
 import { createRoot } from 'react-dom/client'
 import { StrictMode } from 'react'
-import App from './App'
-import { BotonClick } from './components/BotonClick'
-import { ConditionalRendering } from './components/ConditionalRendering'
-import { Contador } from './components/Contador'
+// import App from './App'
+// import { BotonClick } from './components/BotonClick'
+// import { ConditionalRendering } from './components/ConditionalRendering'
+import { Usuarios } from './components/Usuarios'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -13,7 +13,9 @@ createRoot(document.getElementById('root')!).render(
       cargando = {false}
       sesionIniciada = {true}
     /> */}
-    <Contador/>
+    {/* <Contador/> */}
+    {/* <Titulo/> */}
+    <Usuarios/>
   </StrictMode>
   //state
 )

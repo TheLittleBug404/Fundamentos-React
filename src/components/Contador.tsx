@@ -3,9 +3,10 @@ import { useState } from 'react'
 export const Contador = () => {
     //let contador: number = 0;
     const [contador, setContador] = useState<number>(0);
+    const [mostrar,setMostrar] = useState<boolean>(false);
     const incrementar = () => {
         let numero = contador + 1;
-        setContador(numero)
+        setContador(numero);
         console.log(numero);
         console.log(contador);
     }
@@ -19,6 +20,15 @@ export const Contador = () => {
             <button
                 onClick={reducir}
             > - 1</button>
+
+            <button
+                onClick={()=> setMostrar(!mostrar)}
+            >
+                Mostrar
+            </button>
+            {
+                mostrar && <p>Hola</p>
+            }
         </div>
     )
 }

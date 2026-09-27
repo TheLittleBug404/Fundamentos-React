@@ -76,3 +76,15 @@ export default defineConfig([
 ])
 
 ```
+## Hook en react
+useState
+useEffect
+useContext
+useRef
+useMemo
+useReducer
+useCallBack
+```
+  const[variable,setVariable] = useState<number>(0);
+  
+```
